@@ -1,0 +1,22 @@
+<HTML> 
+<HEAD><TITLE> EJ1-Conversion IP Decimal a Binario </TITLE></HEAD> 
+ 
+<BODY> 
+ 
+<?php 
+ 
+$ip="192.18.16.204"; 
+
+$extraer=explode(".",$ip);
+
+$todo= $extraer[0].$extraer[1].$extraer[2].$extraer[3];
+
+print $todo;
+
+
+printf(" En Binario es:  "."'%b'\n ",$todo);
+
+ 
+?> 
+</BODY>  
+</HTML> 
