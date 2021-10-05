@@ -1,0 +1,18 @@
+<?php 
+ /* Astrid Tania Orellana Ordoñez*/
+ 
+$ip="192.18.16.204"; 
+
+$extraer=explode(".",$ip);
+ $res1=sprintf("%'.04d\n",$extraer[0]);
+ $res2=sprintf("%'.04d\n",$extraer[1]);
+ $res3=sprintf("%'.04d\n",$extraer[2]);
+ $res4=sprintf("%'.04d\n",$extraer[3]);
+ 
+ 
+ echo "$ip es el binario : ". decbin($extraer[0]).".";
+ echo decbin($extraer[1]).".";
+ echo decbin($extraer[2]).".";
+ echo decbin($extraer[3]). "\n";
+
+?> 
