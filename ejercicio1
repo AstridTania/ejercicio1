@@ -4,17 +4,22 @@
 <BODY> 
  
 <?php 
+
+/* Astrid Tania Orellana Ordoñez*/
  
 $ip="192.18.16.204"; 
-
 $extraer=explode(".",$ip);
 
-$todo= $extraer[0].$extraer[1].$extraer[2].$extraer[3];
-
-print $todo;
-
-
-printf(" En Binario es:  "."'%b'\n ",$todo);
+ $res1=sprintf("%'.04d\n",$extraer[0]);
+ $res2=sprintf("%'.04d\n",$extraer[1]);
+ $res3=sprintf("%'.04d\n",$extraer[2]);
+ $res4=sprintf("%'.04d\n",$extraer[3]);
+ 
+print (" el $ip es en binario :" ); 
+ printf("%b\n ",$res1);
+ printf("."."%b\n ",$res2);
+ printf("."."%b\n ",$res3);
+ printf("."."%b\n ",$res4);
 
  
 ?> 
